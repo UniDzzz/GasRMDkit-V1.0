@@ -45,6 +45,7 @@ bondfile_name = "bonds.reaxff"
 dumpfile_name = "atominfo.lmp"
 N_Frame = 1000
 type_dic = {1: 'Mo', 2: 'O', 3: 'S'}
+```
 Save the modified config.py file; execute python main.py to perform data preprocessing and module loading. The interface is shown below (the interactive interface is written in Chinese):
 ![image](https://github.com/user-attachments/assets/3b8f107a-f226-4f5a-8a1b-7505c2a06f2e)
 
