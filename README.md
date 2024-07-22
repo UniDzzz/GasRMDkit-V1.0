@@ -45,3 +45,39 @@ bondfile_name = "bonds.reaxff"
 dumpfile_name = "atominfo.lmp"
 N_Frame = 1000
 type_dic = {1: 'Mo', 2: 'O', 3: 'S'}
+Save the modified config.py file; execute python main.py to perform data preprocessing and module loading. The interface is shown below (the interactive interface is written in Chinese):
+![image](https://github.com/user-attachments/assets/3b8f107a-f226-4f5a-8a1b-7505c2a06f2e)
+
+
+## Species Statistical Analysis Function
+
+This module can automatically count the species information that appears during the reaction process, output the species statistical information in the terminal interface, and simultaneously generate a species statistical information file in the `work_path` (if it already exists, it will remind you that it already exists).
+
+## Species Quantity Evolution Plotting Function
+
+This module can automatically plot the evolution of the number of target molecules over time to analyze the increase and decrease trends of species during the reaction process.
+
+## Bond Quantity Evolution Plotting Function
+
+This module can automatically plot the evolution of the number of target bonds over time to analyze the increase and decrease trends of bonding states between atoms during the reaction process.
+
+## Target Atom State Tracking
+
+This module can automatically track the state changes of target elements during the reaction process, outputting all the molecular states corresponding to the target elements over time frames to the `state_trace_data_filter.csv` file.
+
+## Exploration of the Next Transition State
+
+This module can automatically track the next possible state of the target molecule and output it to the terminal interface. You need to manually input the target molecular formula.
+
+## Exploration of the Previous Transition State
+
+This module can automatically track the previous possible state of the target molecule and output it to the terminal interface. You need to manually input the target molecular formula.
+
+## Automatic Reaction Network Plotting
+
+This module can automatically plot the reaction network during the entire reaction process. Input parameters can control the size of the network, and the terminal interface will output the molecular formula information corresponding to the reaction network nodes.
+
+## Manual Reaction Network Plotting
+
+This module allows manual control to plot the reaction network during the reaction process. Input parameters can control the size of the network and the reaction network between target reactants. The terminal interface will output the molecular formula information corresponding to the reaction network nodes.
+
